@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/makspooh/classWork7/issues"
   },
-  "homepage": "https://github.com/makspooh/classWork7#readme"
+  "homepage": "https://github.com/makspooh/classWork7#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
