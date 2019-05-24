@@ -1,0 +1,30 @@
+.container {
+    @include flexible-main-container();
+}
+
+.container__item {
+    @include flexible-container__item();
+    transition-property: background-color;
+    transition-duration: 3s;
+}
+
+.container__input {
+    @include checkbox();
+    right: 140px;
+    top: 15px;
+}
+
+.container__text {
+    @include checkbox();
+    @include checkbox__text();
+    margin-block-start: 0;
+}
+
+.container__input:checked ~ .container__item {
+    @include toCircle();
+}
+
+div.container .container__item:hover {
+    @include flexible-container__item_hover();
+    transition-duration: .1s;
+}

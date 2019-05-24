@@ -1,38 +1,3 @@
-@import './_mixins.scss';
-@import './_variables.scss';
-
 body {
-    background-color: $background;
-}
-    
-.main-container {
-    @include flexible-main-container();
-}
-
-.container__item {
-    @include flexible-container__item();
-}
-
-.checkbox__input {
-    @include checkbox();
-    right: 140px;
-    top: 15px;
-}
-
-.checkbox__input:checked {
-    color: blue;
-}
-
-.checkbox__text {
-    @include checkbox();
-    @include checkbox__text();
-    margin-block-start: 0;
-}
-
-.checkbox__input:checked ~ .container__item {
-    @include toCircle();
-}
-
-div.main-container .container__item:hover {
-    @include flexible-container__item_hover();
+    background-color: $containerBackgroundColor;
 }

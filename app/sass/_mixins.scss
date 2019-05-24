@@ -1,4 +1,3 @@
-@import "./_variables";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
 
 @mixin flexible-main-container() {
@@ -13,12 +12,10 @@
     height: 75px;
     margin: 10px;
     background-color: #000;
-    transition-duration: 3s;
 }
 
 @mixin flexible-container__item_hover() {
-    background-color: $hover;
-    transition-duration: .1s;
+    background-color: $hoverColor;
 }
 
 @mixin checkbox() {
@@ -28,11 +25,8 @@
 }
 
 @mixin checkbox__text() {
-    color: $font;
-    font-family: 'Noto Sans';
-    font-size: 20px;
-    font-weight: bold;
-    font-style: italic;
+    color: $fontColor;
+    font: italic bold 20px 'Noto Sans', Arial, Helvetica, sans-serif;
 }
 
 @mixin toCircle() {

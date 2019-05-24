@@ -19,7 +19,7 @@ gulp.task('browser-sync', () => {
 });
 
 gulp.task('watch', () => {
-    gulp.watch('app/sass/style.scss', gulp.parallel('scss'));
+    gulp.watch('app/sass/*.scss', gulp.parallel('scss'));
 });
 
 gulp.task('default', gulp.parallel('scss', 'browser-sync', 'watch'));
