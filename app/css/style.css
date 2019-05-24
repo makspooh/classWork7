@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap");
+body {
+  background-color: #222222; }
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%; }
+
+.container__item {
+  width: 75px;
+  height: 75px;
+  margin: 10px;
+  background-color: #000;
+  transition-duration: 3s; }
+
+.checkbox__input {
+  display: flex;
+  position: absolute;
+  right: 10px;
+  right: 140px;
+  top: 15px; }
+
+.checkbox__input:checked {
+  color: blue; }
+
+.checkbox__text {
+  display: flex;
+  position: absolute;
+  right: 10px;
+  color: grey;
+  font-family: 'Noto Sans';
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  margin-block-start: 0; }
+
+.checkbox__input:checked ~ .container__item {
+  border: 1px solid yellow;
+  border-radius: 50%;
+  background: none;
+  width: 105px;
+  height: 105px;
+  margin: -5px; }
+
+div.main-container .container__item:hover {
+  background-color: yellow;
+  transition-duration: .1s; }
